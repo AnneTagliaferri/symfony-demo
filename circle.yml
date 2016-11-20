@@ -4,13 +4,16 @@ machine:
   timezone:
     Europe/Paris # Set the timezone
 
-	
+## Customize test commands
+test:
+  override:
+    - ./vendor/bin/phpunit
+
 deployment:
   staging:
     branch: master
     heroku:
       appname: pacific-citadel-84615
-	  
-	  
+
 
 
