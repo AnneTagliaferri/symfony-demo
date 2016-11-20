@@ -12,6 +12,6 @@ test:
     - ./vendor/bin/php-cs-fixer fix --diff --dry-run -v
 	# - rm /etc/apache2/mods-available/php5.conf
 	# - rm /etc/apache2/mods-available/php5.load
-    - sudo cp ~/symfony-demo/apache_circle.conf /etc/apache2/sites-available
-    - sudo a2ensite apache_circle.conf
-    - sudo service apache2 restart
+    # - sudo cp ~/symfony-demo/apache_circle.conf /etc/apache2/sites-available
+    # - sudo a2ensite apache_circle.conf
+    # - sudo service apache2 restart
