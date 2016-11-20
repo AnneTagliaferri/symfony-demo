@@ -15,3 +15,10 @@ test:
     # - sudo cp ~/symfony-demo/apache_circle.conf /etc/apache2/sites-available
     # - sudo a2ensite apache_circle.conf
     # - sudo service apache2 restart
+	
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: pacific-citadel-84615
+
