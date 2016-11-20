@@ -4,6 +4,11 @@ machine:
   environment: 
     ENVIRONMENT: production
 
+
+dependencies:
+  override:
+    - echo "date.timezone = Europe/Paris" > ~/.phpenv/versions/$(phpenv global)/etc/conf.d/date.ini
+
 ## Customize test commands
 test:
   override:
