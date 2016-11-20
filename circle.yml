@@ -14,10 +14,6 @@ dependencies:
     - phpenv config-rm xdebug.ini
     - composer self-update
 	- composer install
-  
-  cache_directories:
-    - $HOME/.composer/cache/files
-
 
 ## Customize test commands
 test:
