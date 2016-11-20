@@ -17,7 +17,8 @@ dependencies:
 ## Customize test commands
 test:
   override:
-    - ./vendor/bin/phpunit
+    - cd symfony-demo/
+    - ~/symfony-demo/vendor/bin/phpunit
 
 deployment:
   staging:
