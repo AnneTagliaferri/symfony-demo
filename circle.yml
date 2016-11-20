@@ -4,23 +4,13 @@ machine:
   timezone:
     Europe/Paris # Set the timezone
 
-## Customize test commands
-test:
-  override:
-    - ./vendor/bin/phpunit
- # post:
-    #- ./vendor/bin/php-cs-fixer fix --diff --dry-run -v
-	# - rm /etc/apache2/mods-available/php5.conf
-	# - rm /etc/apache2/mods-available/php5.load
-    # - sudo cp ~/symfony-demo/apache_circle.conf /etc/apache2/sites-available
-    # - sudo a2ensite apache_circle.conf
-    # - sudo service apache2 restart
 	
 deployment:
   staging:
     branch: master
     heroku:
       appname: pacific-citadel-84615
+	  
 	  
 
 
