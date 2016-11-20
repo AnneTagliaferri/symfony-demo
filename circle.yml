@@ -1,0 +1,27 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    Europe/Paris # Set the timezone
+
+  # Version of ruby to use
+  php:
+    version: 7.0
+
+## Customize dependencies
+dependencies:
+  pre:
+    - phpenv config-rm xdebug.ini
+    - composer self-update
+	- composer install
+  
+  cache_directories:
+    - $HOME/.composer/cache/files
+
+
+## Customize test commands
+test:
+  override:
+    - ./vendor/bin/phpunit
+  post:
+    - ./vendor/bin/php-cs-fixer fix --diff --dry-run -v
