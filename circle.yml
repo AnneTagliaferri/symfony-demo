@@ -1,8 +1,8 @@
 ## Customize the test machine
 machine:
   timezone: Europe/Paris # Set the timezone
-environment: 
-  ENVIRONMENT: production
+  environment: 
+    ENVIRONMENT: production
 
 ## Customize test commands
 test:
