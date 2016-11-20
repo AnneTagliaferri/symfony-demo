@@ -8,13 +8,6 @@ machine:
   php:
     version: 7.0
 
-## Customize dependencies
-dependencies:
-  pre:
-    - phpenv config-rm xdebug.ini
-    - composer self-update
-	- composer install
-
 ## Customize test commands
 test:
   override:
